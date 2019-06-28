@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CarPark_Example' do
+  pod 'CarPark', :path => '../'
+
+  target 'CarPark_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
