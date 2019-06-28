@@ -1,0 +1,6 @@
+framework module Pods_CarPark_Tests {
+  umbrella header "Pods-CarPark_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

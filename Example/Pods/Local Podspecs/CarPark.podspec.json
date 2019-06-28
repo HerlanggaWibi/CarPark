@@ -1,0 +1,22 @@
+{
+  "name": "CarPark",
+  "version": "0.1.0",
+  "summary": "A short description of CarPark.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/herlanggawibi/CarPark",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "herlanggawibi": "wibiherlangga01@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/herlanggawibi/CarPark.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CarPark/Classes/**/*"
+}

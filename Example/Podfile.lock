@@ -1,0 +1,16 @@
+PODS:
+  - CarPark (0.1.0)
+
+DEPENDENCIES:
+  - CarPark (from `../`)
+
+EXTERNAL SOURCES:
+  CarPark:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CarPark: c775e78df24a47fe09e0527f5a125183668a3f96
+
+PODFILE CHECKSUM: b5b18f361f5be8a716782e27ef2a6541da1e6199
+
+COCOAPODS: 1.7.2
