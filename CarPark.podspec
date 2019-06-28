@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CarPark'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Checking Available Cark Parking At Singapore'
 
 # This description is used to generate tags and improve search results.
