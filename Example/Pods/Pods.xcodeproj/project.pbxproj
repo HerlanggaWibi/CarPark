@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0C803A8962F58B8FA5331E1AA64C4C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8D6210D6DB547BCF3812713E1EC462 /* ReplaceMe.swift */; };
+		0FCA86CA22C5EF4700E0935B /* CarParkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA86C922C5EF4700E0935B /* CarParkLibrary.swift */; };
+		0FCA86CC22C5EF8700E0935B /* ASlots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA86CB22C5EF8700E0935B /* ASlots.swift */; };
+		0FCA86CE22C5EFB500E0935B /* ASlotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCA86CD22C5EFB500E0935B /* ASlotsCell.swift */; };
 		224436775484B119B114D09B0174A453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		30409D81FE9AC3A392EFEBBF7F7AD88E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3410AF068CBF0103C9BAA40C5D89B0F5 /* Pods-CarPark_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13021F888A261BF122140C54BB7BDEFF /* Pods-CarPark_Example-dummy.m */; };
@@ -38,14 +40,17 @@
 
 /* Begin PBXFileReference section */
 		005E78AD23052EF8D73D7B756DAE3CFF /* Pods-CarPark_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarPark_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		021D8DBF85656BAC47855DEB099F71EB /* CarPark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CarPark.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		021D8DBF85656BAC47855DEB099F71EB /* CarPark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CarPark.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0267411838AB9CD08EA746F70E3ED334 /* Pods-CarPark_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarPark_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0689A4AF86F07A3B241BA82E2C0CBC68 /* CarPark-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CarPark-Info.plist"; sourceTree = "<group>"; };
+		0FCA86C922C5EF4700E0935B /* CarParkLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkLibrary.swift; sourceTree = "<group>"; };
+		0FCA86CB22C5EF8700E0935B /* ASlots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASlots.swift; sourceTree = "<group>"; };
+		0FCA86CD22C5EFB500E0935B /* ASlotsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASlotsCell.swift; sourceTree = "<group>"; };
 		13021F888A261BF122140C54BB7BDEFF /* Pods-CarPark_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarPark_Example-dummy.m"; sourceTree = "<group>"; };
-		14606BE66EB7E15CA0D348D4196E6A23 /* Pods_CarPark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CarPark_Example.framework; path = "Pods-CarPark_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14606BE66EB7E15CA0D348D4196E6A23 /* Pods_CarPark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1AB4B5B5E3583F85BAEC0C00A1DC08 /* CarPark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarPark.xcconfig; sourceTree = "<group>"; };
 		1E38197038ECF40FCC459CC8EF0B53BC /* Pods-CarPark_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarPark_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AA6509FE5816462A0B020B193734475 /* CarPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CarPark.framework; path = CarPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA6509FE5816462A0B020B193734475 /* CarPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33B1CF57D29605F0D5F7CCE28EE0465B /* Pods-CarPark_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarPark_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		476EB2C01E4208104E09D590D3F1773B /* Pods-CarPark_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarPark_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,18 +59,17 @@
 		51FC2C979E1F0B90389F8C1B0C54916E /* Pods-CarPark_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarPark_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5258F40F6019909B7A3B3E75FFCF14D8 /* Pods-CarPark_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarPark_Tests-dummy.m"; sourceTree = "<group>"; };
 		5A23EE51A405AF709C0D95037BDE3317 /* Pods-CarPark_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarPark_Example-frameworks.sh"; sourceTree = "<group>"; };
-		64A4E9B6267500D8A6C8059CCB053AC3 /* Pods_CarPark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CarPark_Tests.framework; path = "Pods-CarPark_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A4E9B6267500D8A6C8059CCB053AC3 /* Pods_CarPark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB65FA924D6C94287A09D6A4FC5EAED /* Pods-CarPark_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarPark_Example-umbrella.h"; sourceTree = "<group>"; };
 		734EE239615C48BB8E1B9CB1AFE72076 /* Pods-CarPark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarPark_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		758B33973D8406268F7FE41C134AE4FB /* Pods-CarPark_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarPark_Tests-Info.plist"; sourceTree = "<group>"; };
 		7F31AB59E69A235BEF03445B5E847EF4 /* Pods-CarPark_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarPark_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		886FA92CCA447AEB5EB5EB213E1C72A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		886FA92CCA447AEB5EB5EB213E1C72A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8AA2C33CEE97A16B9E3C734D8187A529 /* CarPark-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarPark-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA8D6210D6DB547BCF3812713E1EC462 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CarPark/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BFC2798D9A2B30F1544545AE31843965 /* Pods-CarPark_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarPark_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D61E0FB2251B5484579EBBB64695D33A /* Pods-CarPark_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarPark_Tests.modulemap"; sourceTree = "<group>"; };
-		D6E410413FD19B3025A29063A23D590D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D6E410413FD19B3025A29063A23D590D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DF21AA6F1CDA475008A81F7D7B101668 /* Pods-CarPark_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarPark_Example.modulemap"; sourceTree = "<group>"; };
 		F1502793CB458AB6185B8D0AEA86AD7C /* Pods-CarPark_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarPark_Example-Info.plist"; sourceTree = "<group>"; };
 		F614E3F74AF45A87CA9E82065204C8A1 /* CarPark.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CarPark.modulemap; sourceTree = "<group>"; };
@@ -99,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCA86C822C5EDC600E0935B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0FCA86C922C5EF4700E0935B /* CarParkLibrary.swift */,
+				0FCA86CB22C5EF8700E0935B /* ASlots.swift */,
+				0FCA86CD22C5EFB500E0935B /* ASlotsCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		1A9A402031E6668D8800F5590F221818 /* Pods-CarPark_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +147,7 @@
 		4A9AEBC912495111DE21EBD60271FDCD /* CarPark */ = {
 			isa = PBXGroup;
 			children = (
-				AA8D6210D6DB547BCF3812713E1EC462 /* ReplaceMe.swift */,
+				0FCA86C822C5EDC600E0935B /* Classes */,
 				8F25A62F77E4855B60B2FD80B1C32AA8 /* Pod */,
 				287ADE87FC136EC6FC3F4F8DDEFBFAE7 /* Support Files */,
 			);
@@ -315,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					8AF22948B2C3764B55271C074F0C4ECA = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -372,8 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCA86CA22C5EF4700E0935B /* CarParkLibrary.swift in Sources */,
+				0FCA86CE22C5EFB500E0935B /* ASlotsCell.swift in Sources */,
 				3C43C91080A2C73796F09EFFEA7D1639 /* CarPark-dummy.m in Sources */,
-				1E0C803A8962F58B8FA5331E1AA64C4C /* ReplaceMe.swift in Sources */,
+				0FCA86CC22C5EF8700E0935B /* ASlots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D1AB4B5B5E3583F85BAEC0C00A1DC08 /* CarPark.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -472,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D1AB4B5B5E3583F85BAEC0C00A1DC08 /* CarPark.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -492,6 +515,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -586,8 +610,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

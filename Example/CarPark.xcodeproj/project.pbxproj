@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		085BF56237451DB69F51BFAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		085BF56237451DB69F51BFAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2CC66A4416F1EEB275BAB328 /* Pods-CarPark_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPark_Tests.release.xcconfig"; path = "Target Support Files/Pods-CarPark_Tests/Pods-CarPark_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2EB3427644D28FBFE0471F03 /* Pods-CarPark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPark_Example.debug.xcconfig"; path = "Target Support Files/Pods-CarPark_Example/Pods-CarPark_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		39F10A22DB1B802BA75C4F6F /* Pods-CarPark_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarPark_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CarPark_Tests/Pods-CarPark_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* CarPark_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarPark_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C3987026309B0D64676F426 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C3987026309B0D64676F426 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		83FBC545C56A6F164FBF5455 /* Pods_CarPark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32B879DED3EC9454CEAB3F4 /* Pods_CarPark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarPark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C90E114642CC4AA4CF15CF5B /* CarPark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CarPark.podspec; path = ../CarPark.podspec; sourceTree = "<group>"; };
+		C90E114642CC4AA4CF15CF5B /* CarPark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CarPark.podspec; path = ../CarPark.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				39F10A22DB1B802BA75C4F6F /* Pods-CarPark_Tests.debug.xcconfig */,
 				2CC66A4416F1EEB275BAB328 /* Pods-CarPark_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
