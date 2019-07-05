@@ -1,0 +1,6 @@
+Guide to using:
+1. First Install podfile in terminal (pod install)
+2. Run Project
+
+
+/** i'm using Alamofire and SwiftyJSON for getting data API **/
