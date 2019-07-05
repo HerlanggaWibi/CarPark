@@ -1,14 +1,17 @@
 //
 //  ASlots.swift
-//  CobaTable
 
 
 import Foundation
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 public class ASlotsAvailable: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var dataDict = [NSDictionary?]()
+    
+    var park = [CarParkModel]()
     
     private var myTableView: UITableView!
     
@@ -16,7 +19,7 @@ public class ASlotsAvailable: UIViewController, UITableViewDelegate, UITableView
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        loadData()
+        getData()
         
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
@@ -41,57 +44,35 @@ public class ASlotsAvailable: UIViewController, UITableViewDelegate, UITableView
         return newString
     }
     
-    
-    
-    func loadData() {
-        let time = getDate()
-        let url = URL(string: "https://api.data.gov.sg/v1/transport/carpark-availability?date_time=\(time)")!
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
-            DispatchQueue.main.async {
-                let response = response as? HTTPURLResponse
-                
-                guard let data = data else {
-                    return
+    func getData(){
+        DispatchQueue.main.async {
+            let time = self.getDate()
+            let url = URL(string: "https://api.data.gov.sg/v1/transport/carpark-availability?date_time=\(time)")!
+            Alamofire.request(url).responseJSON(completionHandler: { (response) in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    let items = json["items"][0]["carpark_data"]
+                    
+                    items.array?.forEach({ (carpark) in
+                        
+                        let lot = carpark["carpark_info"][0]["lot_type"].stringValue
+                        let lotA = carpark["carpark_info"][0]["lots_available"].stringValue
+                        let total_lots = carpark["carpark_info"][0]["total_lots"].stringValue
+                        
+                        self.park.append(CarParkModel(lot_type: lot, lots_available: lotA, total_lots: total_lots))
+
+
+                    })
+                    
+                    self.myTableView.reloadData()
+                case .failure(let error):
+                    print(error.localizedDescription)
                 }
-                
-                if response?.statusCode != 200  {
-                    print("status response saat posting: \(String(describing: response?.statusCode)) ")
-                }
-                else {
-                    do {
-                        
-                        
-                        let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
-                        
-                        
-                        guard let dataJson = json?["items"] as? [NSDictionary] else {return}
-                        
-                        let def = dataJson[0]["carpark_data"] as! [NSDictionary]
-                        
-                        
-                        self.dataDict = def
-                        
-                        print(self.dataDict)
-                        
-                        self.myTableView.reloadData()
-                        
-                    }
-                        
-                    catch{
-                        print("tidak ada data JSON")
-                    }
-                }
-                
-            } // Penutup DispatchQueue.main.async
-            }.resume()
-        
-        
-        
+            })
+        }
     }
+    
     
     public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -99,21 +80,22 @@ public class ASlotsAvailable: UIViewController, UITableViewDelegate, UITableView
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return dataDict.count
+        return park.count
         
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let info = self.dataDict[indexPath.row]?["carpark_info"] as? [NSDictionary]
-        let lot = info?[0]["lots_available"] as! String
-        let totalLots = info?[0]["total_lots"] as! String
-        let lotType = info?[0]["lot_type"] as! String
+        
+        let lot = park[indexPath.row].lots_available
+        let totalLots = park[indexPath.row].total_lots
+        let lotType = park[indexPath.row].lot_type
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath) as! ASlotsCell
         
         cell.myLabel.text = "Slot: \(String(describing: lot))"
         cell.myLabel1.text = "Total: \(String(describing: totalLots))"
         cell.myLabel2.text = "LOT_TYPE: \(lotType)"
+        
         
         return cell
     }
