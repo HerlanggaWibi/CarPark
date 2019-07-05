@@ -38,5 +38,6 @@ Checking Available Cark Parking At Singapore. Install
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Alamofire', '~> 4.8.1'
+   s.dependency 'SwiftyJSON', '~> 3.0'
 end
